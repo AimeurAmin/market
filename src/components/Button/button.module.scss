@@ -1,0 +1,11 @@
+.button {
+  background-color: #2a85ff;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 50px;
+  cursor: pointer;
+  &:active {
+    opacity: .7;
+  }
+}

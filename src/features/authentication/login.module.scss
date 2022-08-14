@@ -1,0 +1,28 @@
+.container {
+  width: 42%;
+  background-color: #1a1c1e;
+  padding-block-start: 54px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-block-end: 60px;
+  }
+  .passwordHint {
+    margin-top: 7px;
+    color: white;
+    cursor: pointer;
+    width: 53%;
+  }
+
+  .accountHint {
+    margin-block-start: 15px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+}
