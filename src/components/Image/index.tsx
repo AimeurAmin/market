@@ -7,6 +7,7 @@ interface ImageProps {
   alt: string;
   onClick?: MouseEventHandler<HTMLImageElement>;
   style?: any;
+  className?: any;
 }
 
 const { logoImg } = styles;
@@ -15,6 +16,7 @@ const Image = ({
   src = undefined,
   alt = "TwoDevs",
   style,
+  className,
   onClick = undefined,
 }: ImageProps) => {
   return (
@@ -22,7 +24,7 @@ const Image = ({
       src={src}
       onClick={onClick}
       alt="TwoDevs"
-      className={logoImg}
+      className={`${logoImg} ${className}`}
       style={style}
     />
   );

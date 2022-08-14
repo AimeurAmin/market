@@ -1,10 +1,12 @@
 import React from "react";
-import Image from "../components/Image";
-import Login from "../features/authentication/Login";
+import Image from "../../components/Image";
+import Login from "../../features/authentication/Login";
 import styles from "./login-page.module.scss";
-import MarketManagerLogo from "../assets/imgs/Logo-market-manager.png";
+import MarketManagerLogo from "../../assets/imgs/Logo-market-manager.png";
 import { useNavigate } from "react-router-dom";
-const { container } = styles;
+
+const { container, logoItem } = styles;
+
 const LoginPage = () => {
   const navigate = useNavigate();
   return (
@@ -12,7 +14,7 @@ const LoginPage = () => {
       <Image
         src={MarketManagerLogo}
         alt="Market-Manager"
-        style={extrStyles.logo}
+        className={logoItem}
         onClick={() => navigate("/")}
       />
       <Login />
@@ -22,13 +24,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
-const extrStyles = {
-  logo: {
-    width: 200,
-    position: "absolute",
-    top: 20,
-    left: 20,
-    cursor: "pointer",
-  },
-};

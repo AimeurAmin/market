@@ -41,7 +41,7 @@ const Login = () => {
 
       <Button
         text="Connecter"
-        onClick={() => navigate("/counter")}
+        onClick={() => navigate("/cashier")}
         style={{ marginBlock: 40 }}
       />
 
