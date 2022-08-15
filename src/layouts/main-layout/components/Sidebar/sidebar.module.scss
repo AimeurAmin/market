@@ -1,0 +1,26 @@
+.container {
+  padding-block-start: 30px;
+  background-color: #111315;
+  box-shadow: rgba(255, 255, 255, 0.05) 1.95px 1.95px 2.6px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.05) 1.95px 1.95px 2.6px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.05) 1.95px 1.95px 2.6px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .logoItem {
+    width: 200px;
+    margin-inline: 25px;
+  }
+
+  .items {
+    margin-block-start: 20px;
+  }
+
+  .logoutItem {
+    position: absolute;
+    bottom: 20px;
+    width: -webkit-fill-available;
+  }
+}

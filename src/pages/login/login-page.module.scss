@@ -5,4 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .logoItem {
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    cursor: pointer;
+  }
 }
