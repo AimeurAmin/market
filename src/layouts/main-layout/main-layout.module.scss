@@ -1,10 +1,11 @@
 .container {
   display: flex;
   height: 100%;
-  width: 100%;
+  flex-grow: 1;
 
   .mainContent {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
   }
 }
