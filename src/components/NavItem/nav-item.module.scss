@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  padding-block: 15px;
+  padding-inline-start: 33px;
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    background-color: rgba(53, 55, 56, 0.5);
+  }
+
+  & > span {
+    margin-inline-start: 18px;
+    font-size: 18px;
+  }
+}
+
+.current {
+  background-color: #353738;
+}
