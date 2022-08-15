@@ -14,7 +14,7 @@ interface Props {
   className?: any;
 }
 
-const NavItem = ({ Icon, size = 26, text, style, route, className }: Props) => {
+const SideNavItem = ({ Icon, size = 26, text, style, route, className }: Props) => {
   return (
     <NavLink
       to={route}
@@ -28,4 +28,4 @@ const NavItem = ({ Icon, size = 26, text, style, route, className }: Props) => {
   );
 };
 
-export default NavItem;
+export default SideNavItem;
