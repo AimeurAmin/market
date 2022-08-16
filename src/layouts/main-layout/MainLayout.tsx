@@ -1,7 +1,8 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import styles from "./main-layout.module.scss";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Navbar from "./components/Navbar/Navbar";
+import Subnav from "./components/Subnav/Subnav";
 
 const { container, mainContent, content } = styles;
 
@@ -11,6 +12,7 @@ const MainLayout = (Content: any) => {
       <Sidebar />
       <div className={mainContent}>
         <Navbar />
+        <Subnav text="Sub nav" />
         <Content />
       </div>
     </div>
