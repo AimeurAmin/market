@@ -81,12 +81,12 @@ const Paginator = ({ pagesNumber = 0, selectedPage = 1 }: Props) => {
 
   const moveLeft = () => {
     setCurrentPage((prev) => {
-      if (prev > 0) {
+      if (prev > 1) {
         const generatedPages = generateNeighboors(prev - 1, pagesNumber);
         setVisiblePages({
-          previous: generatedPages.includes(prev - 1),
+          previous: generatedPages.includes(prev - 2),
           pages: generatedPages,
-          next: generatedPages.includes(prev + 1),
+          next: true,
         });
       } else {
         setVisiblePages((prev) => ({ ...prev, previous: false }));
@@ -113,10 +113,6 @@ const Paginator = ({ pagesNumber = 0, selectedPage = 1 }: Props) => {
       if (currentPage + i < pagesNumber) {
         generatedPages = [...generatedPages, currentPage + i];
       }
-      console.log(currentPage);
-      console.log(i);
-
-      console.log(generatedPages);
     }
     return generatedPages;
   };
