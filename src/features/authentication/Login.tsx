@@ -5,7 +5,7 @@ import passwordIcon from "./assets/password.svg";
 import styles from "./login.module.scss";
 import Image from "../../components/Image";
 import robotImg from "../../assets/imgs/robot.png";
-import Button from "../../components/Button/Button";
+import Button from "../../components/main-button/MainButton";
 import { useNavigate } from "react-router-dom";
 
 const { container, title, passwordHint, accountHint } = styles;

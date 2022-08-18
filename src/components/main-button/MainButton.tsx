@@ -1,5 +1,5 @@
 import React, { DetailedHTMLProps, HTMLAttributes, MouseEventHandler } from "react";
-import style from "./button.module.scss";
+import style from "./main-button.module.scss";
 
 const { button } = style;
 
