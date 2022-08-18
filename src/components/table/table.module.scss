@@ -1,7 +1,9 @@
 .container {
+  margin-block-start: 120px;
   .table {
     width: 100%;
     border-collapse: collapse;
+    height: 100%;
 
     thead {
       overflow: hidden;
@@ -30,9 +32,8 @@
     tbody {
       background-color: #111315;
       display: block;
-      max-height: 480px;
       overflow-y: scroll;
-
+      max-height: calc(100vh - 500px);
       &::-webkit-scrollbar {
         width: 5px;
       }
