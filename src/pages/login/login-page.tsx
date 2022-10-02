@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "../../components/Image";
-import Login from "../../features/authentication/Login";
+import Image from "@components/Image";
+import Login from "@features/authentication/Login";
 import styles from "./login-page.module.scss";
-import MarketManagerLogo from "../../assets/imgs/Logo-market-manager.png";
+import MarketManagerLogo from "@assets/imgs/Logo-market-manager.png";
 import { useNavigate } from "react-router-dom";
 
 const { container, logoItem } = styles;

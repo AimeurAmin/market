@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePic from "../../../../components/ProfilePic/ProfilePic";
+import ProfilePic from "@components/ProfilePic/ProfilePic";
 import styles from "./navbar.module.scss";
 
 const { container } = styles;

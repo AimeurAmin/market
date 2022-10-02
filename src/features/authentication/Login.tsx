@@ -1,11 +1,11 @@
 import React from "react";
-import Input from "../../components/Input/Input";
+import Input from "@components/Input/Input";
 import userIcon from "./assets/user.svg";
 import passwordIcon from "./assets/password.svg";
 import styles from "./login.module.scss";
-import Image from "../../components/Image";
-import robotImg from "../../assets/imgs/robot.png";
-import Button from "../../components/Button/Button";
+import Image from "@components/Image";
+import robotImg from "@assets/imgs/robot.png";
+import Button from "@components/Button/Button";
 import { useNavigate } from "react-router-dom";
 
 const { container, title, passwordHint, accountHint } = styles;

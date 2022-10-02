@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./profile-pic.module.scss";
-import robot from "../../assets/imgs/robot.png";
+import robot from "@assets/imgs/robot.png";
 import { RiArrowDownSFill } from "react-icons/ri";
 
 const { container, usernameContainer } = styles;

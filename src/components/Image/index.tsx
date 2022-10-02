@@ -1,5 +1,5 @@
 import React, { MouseEventHandler } from "react";
-import logo from "../../assets/imgs/Logo-market-manager.png";
+import logo from "@/assets/imgs/Logo-market-manager.png";
 import styles from "./logo.module.scss";
 
 interface ImageProps {

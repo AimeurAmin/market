@@ -1,8 +1,8 @@
 import React, { useId, useState } from "react";
 import Image from "../Image";
 import userIcon from "../assets/user.svg";
-import hiddenPasswordIcon from "../../assets/icons/hidden-password.svg";
-import visiblePasswordIcon from "../../assets/icons/visible-password.svg";
+import hiddenPasswordIcon from "@assets/icons/hidden-password.svg";
+import visiblePasswordIcon from "@assets/icons/visible-password.svg";
 import styles from "./input.module.scss";
 interface InputModel {
   placeholder?: string;

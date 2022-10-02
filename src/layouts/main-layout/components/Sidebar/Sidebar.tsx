@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "../../../../components/Image";
-import logo from "../../../../assets/imgs/Logo-market-manager.png";
+import Image from "@components/Image";
+import logo from "@assets/imgs/Logo-market-manager.png";
 import styles from "./sidebar.module.scss";
-import SideNavItem from "../../../../components/NavItem/NavItem";
+import SideNavItem from "@components/NavItem/NavItem";
 import { HiHome } from "react-icons/hi";
 import { MdPointOfSale, MdStore } from "react-icons/md";
 import { BsPeopleFill, BsCartFill } from "react-icons/bs";

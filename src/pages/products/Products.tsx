@@ -1,5 +1,5 @@
 import React from "react";
-import MainLayout from "../../layouts/main-layout/MainLayout";
+import MainLayout from "@layouts/main-layout/MainLayout";
 import styles from "./products.module.scss";
 
 const { container } = styles;
