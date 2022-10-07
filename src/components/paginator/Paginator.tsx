@@ -51,7 +51,7 @@ const Paginator = ({ pagesNumber = 0, selectedPage = 1 }: Props) => {
         )}
       </div>
       {visiblePages.map((pageNumber: number) => (
-        <>
+        <div key={pageNumber}>
           <div
             className={`${pageBox} ${
               pageNumber === currentPage ? activePage : ""
@@ -62,7 +62,7 @@ const Paginator = ({ pagesNumber = 0, selectedPage = 1 }: Props) => {
           >
             {pageNumber}
           </div>
-        </>
+        </div>
       ))}
       <div className={arrowContainer}>
         {pagesNumber > 4 && currentPage < pagesNumber && (
