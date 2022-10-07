@@ -18,6 +18,7 @@ interface InputModel {
     prefixIcon?: any;
     suffixIcon?: any;
   };
+  className?: string;
 }
 
 const { container } = styles;
@@ -30,6 +31,7 @@ const Input = ({
   suffixIcon = undefined,
   passwordVisibility = false,
   style = {},
+  className = ''
 }: InputModel) => {
   const id = useId();
   const [visiblePassword, setVisiblePassword] = useState(false);

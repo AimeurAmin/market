@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #EEE;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-radius: 5px;
+
+    input {
+        font-size: 1.2rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        flex-grow: 1;
+    }
+
+    :last-child {
+        color: black;
+        font-size: 1.2rem;
+        padding-inline: 10px;
+    }
+}

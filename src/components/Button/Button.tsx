@@ -5,13 +5,14 @@ const { button } = style;
 
 interface ButtonProps {
   text: string;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
   onClick?: MouseEventHandler<HTMLDivElement>;
+  className?: string;
 }
 
-const Button = ({ text, onClick, style }: ButtonProps) => {
+const Button = ({ text, onClick, style, className }: ButtonProps) => {
   return (
-    <div className={button} onClick={onClick} style={style}>
+    <div className={`${button} ${className}`} onClick={onClick} style={style}>
       {text}
     </div>
   );

@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+    .buttonStyle {
+        flex-grow: 1;
+        text-align: center;
+        font-weight: 400;
+        padding: 10px 30px;
+    }
+    .inputContainer {
+        flex-grow: 1;
+        margin-inline: 10px;
+
+        .suffixIcon {
+            color: red;
+        }
+    }
+}
