@@ -8,13 +8,15 @@ const CashierTable = () => {
     return (
         <Table>
             <thead>
-            <th></th>
-            <th>Image</th>
-            <th>Référence Produit</th>
-            <th>Prix unit.</th>
-            <th>Quantité</th>
-            <th>Prix à payer</th>
-            <th>Actions</th>
+                <tr>
+                    <th></th>
+                    <th>Image</th>
+                    <th>Référence Produit</th>
+                    <th>Prix unit.</th>
+                    <th>Quantité</th>
+                    <th>Prix à payer</th>
+                    <th>Actions</th>
+                </tr>
             </thead>
             <tbody>
             <tr>
