@@ -10,7 +10,7 @@ type CustomInputProps = {
 
 const CustomInput = ({ className, children }: CustomInputProps ) => {
   return (
-    <div className={`${className} ${container}`}>{children}</div>
+    <div className={`${className? className : ''} ${container}`}>{children}</div>
   )
 }
 

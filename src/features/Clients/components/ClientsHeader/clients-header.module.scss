@@ -1,0 +1,20 @@
+.container {
+  margin-block-end: 20px;
+  .title {
+    margin-block-end: 10px;
+  }
+
+  .actionsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button {
+    margin-inline-end: 10px;
+  }
+  .inputContainer {
+    flex-grow: 1;
+    margin-inline: 10px;
+  }
+}
