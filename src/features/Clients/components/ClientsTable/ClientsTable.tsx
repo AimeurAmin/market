@@ -7,7 +7,7 @@ import rachelPic from '@features/Clients/assets/img/rachel.jpg';
 import { RiDeleteBin5Line, RiFileList2Line } from 'react-icons/ri';
 import style from './clients-table.module.scss';
 
-const {userPic} = style;
+const {userPic, latePayment, noLatePayment} = style;
 
 const fakeData = [{
   id: 1,
@@ -67,7 +67,7 @@ const ClientsTable = () => {
             <td><img src={client.img} alt="Tomates" height={34} className={userPic}/></td>
             <td>{client.lastName}</td>
             <td>{client.firstName}</td>
-            <td>{client.lateFromPayment} DZD</td>
+            <td className={client.lateFromPayment ? latePayment : noLatePayment}>{client.lateFromPayment} DZD</td>
             <td>{client.totalUnpained} DZD</td>
             <td>
               <RiFileList2Line
