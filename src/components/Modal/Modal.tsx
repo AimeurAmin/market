@@ -8,11 +8,14 @@ interface ModalProps {
   isOpen: boolean;
   close?: Function;
 }
+
 const Modal = ({children, isOpen, close}: ModalProps) => {
   const portalDiv = document.getElementById('modal')!;
+
   if(!isOpen) {
     return null;
   }
+  
   return createPortal(
     <div className={container}>
       <div className={overlay} onMouseUp={() => close? close() : undefined}></div>

@@ -13,10 +13,17 @@
         outline: none;
         flex-grow: 1;
     }
-
-    :last-child {
-        color: black;
+    
+    svg:last-of-type {
+        color: red;
         font-size: 1.2rem;
         padding-inline: 10px;
     }
+    
+    svg:first-of-type {
+        color: green;
+        font-size: 1.2rem;
+        padding-inline: 10px;
+    }
+
 }

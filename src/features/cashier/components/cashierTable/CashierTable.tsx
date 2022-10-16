@@ -22,7 +22,7 @@ const CashierTable = () => {
             <tr>
                 <td>1</td>
                 <td>
-                <img src={tomates} alt="Tomates" height={34} />
+                    <img src={tomates} alt="Tomates" height={34} />
                 </td>
                 <td>Tomates</td>
                 <td>70.00 DZD</td>
