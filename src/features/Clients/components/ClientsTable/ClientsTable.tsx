@@ -7,7 +7,7 @@ import rachelPic from '@features/Clients/assets/img/rachel.jpg';
 import { RiDeleteBin5Line, RiFileList2Line } from 'react-icons/ri';
 import style from './clients-table.module.scss';
 
-const {userPic, latePayment, noLatePayment} = style;
+const {userPic, body, latePayment, noLatePayment} = style;
 
 const fakeData = [{
   id: 1,
@@ -60,7 +60,7 @@ const ClientsTable = () => {
           <th>Actions</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className={body}>
         {fakeData.map((client, index) => (
           <tr key={client.id}>
             <td>{index + 1}</td>
