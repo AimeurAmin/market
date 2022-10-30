@@ -39,15 +39,18 @@
   "homepage": ".",
   "engines": { 
     "node": "16.17.0",
-    "npm": "8.18.0"
+    "npm": "8.18.0",
+    "craco": "6.4.5",
+    "yarn": "1.22.19"
     }, 
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test", 
-    "eject": "react-scripts eject",     
-    "preinstall": "npx npm-force-resolutions",
-    "heroku-postbuild": "npm install" 
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
+    "electron:build": "",
+    "electron:start": "wait-on tcp:3000 && electron ."
   },
   "eslintConfig": {
     "extends": [
