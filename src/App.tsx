@@ -10,10 +10,9 @@ import StudentPage from "./pages/student/StudentPage";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 import StudentDetail from "./pages/student/studentDetail/StudentDetail";
-import { useAppDispatch, useAppSelector } from "@app/hooks";
-import { loadSession, selectToken } from "@features/authentication/slices/auth.slice";
+import { useAppDispatch } from "@app/hooks";
+import { loadSession } from "@features/authentication/slices/auth.slice";
 import { localStorageGet } from "@app/utils";
-import Redirect  from "react-router-dom";
 
 const { container } = styles;
 
@@ -37,10 +36,10 @@ function App() {
     <Provider store={store}>
       <div className={container}>
         <Routes>
+          <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
 
-          <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
           <Route path="/cashier" element={<ProtectedRoute><Cashier /></ProtectedRoute>} />
           <Route path="/teachers" element={<ProtectedRoute><Clients /></ProtectedRoute>} />     
 
