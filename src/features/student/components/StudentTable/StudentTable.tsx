@@ -12,17 +12,10 @@ import { selectToken } from "@features/authentication/slices/auth.slice";
 const { userPic, icon, actions, tooltip } = styles;
 
 const StudentTable = () => {
-  const token = useAppSelector(selectToken);
 
   const students = useAppSelector(selectStudents);
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if(token) {
-      dispatch(asyncGetStudents());
-    }
-  }, [token]);
 
   const removeStudent = (id: string) => {
     dispatch(asyncRemoveStudent(id));

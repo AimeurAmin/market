@@ -3,14 +3,26 @@ import styles from './student.module.scss'
 import StudentTable from '@features/student/components/StudentTable/StudentTable';
 import StudentHeader from '@features/student/components/StudentHeader/StudentHeader';
 import Paginator from '@components/paginator/Paginator';
-import { useAppSelector } from '../../app/hooks';
-import { selectStudentsLoadingState } from '@features/student/slices/Students.slice';
+import { useAppDispatch, useAppSelector } from '../../app/hooks';
+import { asyncGetStudents, selectStudentsLoadingState } from '@features/student/slices/Students.slice';
 import Loading from '@components/Loading/Loading';
+import { useEffect } from 'react';
+import { selectToken } from '@features/authentication/slices/auth.slice';
 
 const {container} = styles;
 
 const StudentPage = () => {
   const loading = useAppSelector(selectStudentsLoadingState)
+  const dispatch = useAppDispatch();
+  const token = useAppSelector(selectToken);
+
+  useEffect(() => {
+    console.log('here');
+    
+    if(token) {
+      dispatch(asyncGetStudents());
+    }
+  }, [token, dispatch]);
   return (
     <div className={container}>
       {loading && <Loading />}
