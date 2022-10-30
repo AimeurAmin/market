@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.5",
     "@electron/remote": "^2.0.8",
     "@reduxjs/toolkit": "^1.8.4",
     "@testing-library/jest-dom": "^5.16.5",
@@ -41,10 +42,10 @@
     "npm": "8.18.0"
     }, 
   "scripts": {
-    "start": "npm start",
-    "build": "npm build",
-    "test": "npm test",
-    "eject": "npm eject",
+    "start": "npm run start",
+    "build": "npm run build",
+    "test": "npm run test",
+    "eject": "npm run eject",
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
     "electron:build": "",
     "electron:start": "wait-on tcp:3000 && electron ."
