@@ -16,13 +16,16 @@ const StudentPage = () => {
   const dispatch = useAppDispatch();
   const token = useAppSelector(selectToken);
 
+
   useEffect(() => {
-    console.log('here');
+    console.log('here..');
     
     if(token) {
       dispatch(asyncGetStudents());
     }
-  }, [token]);
+  }, [token])
+  
+
   return (
     <div className={container}>
       {loading && <Loading />}
