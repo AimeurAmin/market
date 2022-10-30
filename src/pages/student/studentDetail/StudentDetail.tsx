@@ -45,6 +45,9 @@ const StudentDetail = () => {
       
       case 2:
         return <StudentPayments />;
+
+      default: 
+        return <StudentDetails />
     }
   }
   
