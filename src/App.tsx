@@ -42,9 +42,8 @@ function App() {
 
           <Route path="/cashier" element={<ProtectedRoute><Cashier /></ProtectedRoute>} />
           <Route path="/teachers" element={<ProtectedRoute><Clients /></ProtectedRoute>} />     
-
-          <Route path="/students" element={<ProtectedRoute><StudentPage /></ProtectedRoute>} />
           <Route path="/students/:studentId" element={<ProtectedRoute><StudentDetail /></ProtectedRoute>} />
+          <Route path="/students" element={<ProtectedRoute><StudentPage /></ProtectedRoute>} />
         </Routes>
       </div>
     </Provider>
