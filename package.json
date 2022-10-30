@@ -37,6 +37,10 @@
   },
   "main": "public/main.js",
   "homepage": ".",
+  "engines": { 
+    "node": "16.17.0",
+    "npm": "16.17.0"
+    }, 
   "scripts": {
     "start": "craco start",
     "build": "craco build",
