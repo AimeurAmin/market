@@ -37,10 +37,10 @@ function App() {
     <Provider store={store}>
       <div className={container}>
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
 
+          <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
           <Route path="/cashier" element={<ProtectedRoute><Cashier /></ProtectedRoute>} />
           <Route path="/teachers" element={<ProtectedRoute><Clients /></ProtectedRoute>} />     
 
