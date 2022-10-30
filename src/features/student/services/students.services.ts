@@ -1,4 +1,4 @@
-import { localStorageGet } from "@app/utils";
+import { getToken, localStorageGet } from "@app/utils";
 import { StudentModel } from "@features/student/StudentModel";
 import axios from "axios";
 
@@ -211,15 +211,12 @@ const fakeData: StudentModel[] = [{
   }
 }]
 
-const token: string | null = localStorageGet("token");
-
-
 const baseUrl = 'https://applicationapischool.herokuapp.com/api'
 
 export const fetchStudents = () => {
   return axios.get(`${baseUrl}/students`, {
     headers: {
-      Authorization: `Bearer ${token}`
+      Authorization: `Bearer ${getToken()}`
     }
   })
 }
@@ -227,7 +224,7 @@ export const fetchStudents = () => {
 export const fetchStudent = ({id}: {id: string}) => {
   return axios.get(`${baseUrl}/students/${id}`, {
     headers: {
-      Authorization: `Bearer ${token}`
+      Authorization: `Bearer ${getToken()}`
     }
   })
 }

@@ -3,3 +3,5 @@ export const locallyStore = (key: string, value: string) => {
 };
 
 export const localStorageGet = (key: string) => localStorage.getItem(key);
+
+export const getToken = () => localStorageGet("token");

@@ -14,23 +14,11 @@ const {container} = styles;
 const StudentPage = () => {
   const loading = useAppSelector(selectStudentsLoadingState)
   const dispatch = useAppDispatch();
-  const token = useAppSelector(selectToken);
-
 
   useEffect(() => {
-    console.log('here..');
-    
-    if(token) {
-      dispatch(asyncGetStudents());
-    }
-  }, [])
-  useEffect(() => {
-    console.log('here..');
-    
-    if(token) {
-      dispatch(asyncGetStudents());
-    }
-  }, [token])
+    console.log('here..');    
+    dispatch(asyncGetStudents());
+  }, [dispatch]);
   
 
   return (
