@@ -23,6 +23,13 @@ const StudentPage = () => {
     if(token) {
       dispatch(asyncGetStudents());
     }
+  }, [])
+  useEffect(() => {
+    console.log('here..');
+    
+    if(token) {
+      dispatch(asyncGetStudents());
+    }
   }, [token])
   
 
