@@ -29,11 +29,11 @@ const StudentDetail = () => {
     return () => {
       setEditMode(false)
     }
-  }, [token])
+  }, [token]);
   
   const selectTab = (id: number) => {
     setIsSelected(id);
-  }
+  };
   
   return (
     <div className={container}>
