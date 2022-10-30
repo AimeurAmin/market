@@ -12,15 +12,17 @@ interface Props {
   children?: ReactNode;
   style?: React.CSSProperties;
   className?: any;
+  onClick?: any;
 }
 
-const SideNavItem = ({ Icon, size = 26, text, style, route, className }: Props) => {
+const SideNavItem = ({ Icon, size = 26, text, style, route, className, onClick }: Props) => {
   return (
     <NavLink
       to={route}
       className={({ isActive }: any) =>
         `${container} ${className} ${isActive ? current : ""}`
       }
+      onClick={onClick}
     >
       <Icon color="white" size={size} />
       <span>{text}</span>

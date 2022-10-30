@@ -10,6 +10,7 @@ import { FaChalkboardTeacher } from 'react-icons/fa'
 
 
 import { RiLogoutBoxFill } from "react-icons/ri";
+import { locallyStore } from "@app/utils";
 
 const { container, items, logoutItem, logoItem } = styles;
 
@@ -29,6 +30,9 @@ const Sidebar = () => {
         text="Déconnecter"
         route="/login"
         className={logoutItem}
+        onClick={() => {
+          localStorage.removeItem('token')
+        }}
       />
     </div>
   );
