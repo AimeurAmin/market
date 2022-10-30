@@ -34,22 +34,6 @@ const StudentDetail = () => {
   const selectTab = (id: number) => {
     setIsSelected(id);
   }
-
-  const getSelectedTab = () => {
-    switch (isSelected) {
-      case 0:
-        return <StudentDetails />;
-    
-      case 1:
-        return <StudentSlots />;
-      
-      case 2:
-        return <StudentPayments />;
-
-      default: 
-        return <StudentDetails />
-    }
-  }
   
   return (
     <div className={container}>
@@ -75,7 +59,9 @@ const StudentDetail = () => {
         </div>
       </div>
       <div className={content}>
-        {getSelectedTab()}
+        {isSelected === 0 && <StudentDetails />}
+        {isSelected === 1 && <StudentSlots />}
+        {isSelected === 2 && <StudentPayments />}
       </div>
     </div>
   )
