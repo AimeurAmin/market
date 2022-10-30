@@ -22,7 +22,7 @@ const StudentPage = () => {
     if(token) {
       dispatch(asyncGetStudents());
     }
-  }, [token, dispatch]);
+  }, [token]);
   return (
     <div className={container}>
       {loading && <Loading />}
