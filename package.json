@@ -42,13 +42,12 @@
     "npm": "8.18.0"
     }, 
   "scripts": {
-    "start": "npm run start",
-    "build": "npm run build",
-    "test": "npm run test",
-    "eject": "npm run eject",
-    "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
-    "electron:build": "",
-    "electron:start": "wait-on tcp:3000 && electron ."
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test", 
+    "eject": "react-scripts eject",     
+    "preinstall": "npx npm-force-resolutions",
+    "heroku-postbuild": "npm install" 
   },
   "eslintConfig": {
     "extends": [
