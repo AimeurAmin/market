@@ -13,9 +13,11 @@
   }
   .passwordHint {
     margin-top: 7px;
+    margin-bottom: 45px;
     color: white;
     cursor: pointer;
     width: 53%;
+    text-align: center;
   }
 
   .accountHint {
@@ -25,4 +27,38 @@
     width: 100%;
     text-align: center;
   }
+  
+  .inputClass {
+    margin-bottom: 35px;
+    padding-inline: 5px;
+    width: 420px;
+    border: 1px solid transparent;
+
+    input {
+      font-size: 16px;
+      padding-block: 5px;
+    }
+  }
+
+  .errorClass {
+    border: 1px solid red;
+  }
+  
+  .errorMessage {
+    color: red;
+    position: absolute;
+    top: 50px;
+  }
+
+  button {
+    background-color: #2a85ff;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+  }
+
 }

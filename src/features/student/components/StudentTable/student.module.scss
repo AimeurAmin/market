@@ -1,0 +1,56 @@
+.userPic {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 3px #FFFFFF);
+}
+
+tbody {
+  tr {
+    &:hover {
+      background-color: #1e2225;
+      cursor: pointer;
+    }
+    td {
+      .actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+          position: relative;
+          svg:hover~.tooltip {
+            
+            display: block;
+            position: absolute;
+            z-index: 99;
+            top: 15px;
+            left: 0;
+            background-color: #FFF;
+            color: black;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 3px;
+          }
+          .tooltip {
+            display: none;
+          }
+        }
+      }
+    }
+    .icon {
+      // position: relative;
+      // 
+      // p {
+        // position: absolute;
+        // top: 20px;
+        // left: 10px;
+        // z-index: inherit;
+        // color: #FFFFFF;
+      // }
+    }
+  }
+
+  
+
+}

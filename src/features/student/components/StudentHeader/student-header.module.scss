@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-block-end: 20px;
+
+  .button {
+    flex: 1;
+    padding-block: 23px;
+    background-color: #2a85ff;
+    button {
+      color: white;
+    }
+  }
+
+  .inputContainer {
+    flex: 3;
+    margin-inline: 10px;
+  }
+}

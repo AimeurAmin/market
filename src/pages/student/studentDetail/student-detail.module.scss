@@ -1,0 +1,42 @@
+.container {
+  background-color: #1a1c1e;
+  padding: 20px 30px;
+  position: relative;
+  flex-grow: 1;
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    .menu {
+      display: flex;
+      .item {
+        margin-inline: 10px;
+        padding-inline: 20px;
+        font-size: large;
+        padding-block-end: 15px;
+        
+      }
+  
+      .selected {
+        border-bottom: 4px solid  #2a85ff;
+        ;
+        cursor: default;
+      }
+  
+      .notSelected {
+        border-bottom: 1px solid rgb(51, 51, 51);
+        cursor: pointer;
+      }
+    }
+
+    .actions {
+      button {
+        margin-inline: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content {
+    padding-block-start: 50px;
+  }
+}
