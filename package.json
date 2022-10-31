@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.5",
     "@electron/remote": "^2.0.8",
     "@reduxjs/toolkit": "^1.8.4",
     "@testing-library/jest-dom": "^5.16.5",
@@ -35,13 +36,7 @@
     "web-vitals": "^2.1.4"
   },
   "main": "public/main.js",
-  "homepage": "./",
-  "engines": { 
-    "node": "16.17.0",
-    "npm": "8.18.0",
-    "craco": "6.4.5",
-    "yarn": "1.22.19"
-    }, 
+  "homepage": ".",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
@@ -49,9 +44,7 @@
     "eject": "craco eject",
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
     "electron:build": "",
-    "electron:start": "wait-on tcp:3000 && electron .",
-    "preinstall": "npx npm-force-resolutions",
-    "heroku-postbuild": "npm install" 
+    "electron:start": "wait-on tcp:3000 && electron ."
   },
   "eslintConfig": {
     "extends": [
